@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+body {
+  height: 50vh;
+  margin: 0 20px;
+}
+.body {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 28px;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.container {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  min-height: 50vh;
+}
+/** Corner Radial Start **/
+
+.title {
+  color: white;
+  font-family: "Crimson Text", serif;
+  font-size: 60px;
+  line-height: 84px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/** Corner radial stop **/
+/**** MIDDLE MENU START *****/
+#menu {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  margin: -75px 0 0 -75px;
+  list-style: none;
+  font-size: 200%;
+}
+
+.menu-button {
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu-button {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  background: #d60909;
+  background-size: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 75px;
+  color: #fff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #ad0707;
+  }
+  100% {
+    background-color: rgb(104, 4, 4);
+  }
+}
+#menu:not(:target) > a:first-of-type,
+#menu:target > a:last-of-type {
+  opacity: 1;
+  z-index: 1;
+}
+
+#menu:not(:target) > .icon-plus:before,
+#menu:target > .icon-minus:before {
+  opacity: 1;
+}
+
+.menu-item a {
+  color: #fff;
+  position: relative;
+  top: 30%;
+  left: 0;
+  text-decoration: none;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  margin: -10px 0 0 -30px;
+  top: 70%;
+  left: 50%;
+  font-size: 20px;
+}
