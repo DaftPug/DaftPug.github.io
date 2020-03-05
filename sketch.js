@@ -278,7 +278,7 @@ function setup() {
 
   // create spanish language button
   es_button = new Clickable()
-  es_button.img = sp_flag
+  es_button.img = es_flag
   // let es_width = (es_button.height / 2) * 3
   // es_button.width = es_width
   es_button.locate(20, 160)
